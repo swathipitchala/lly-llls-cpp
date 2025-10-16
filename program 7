@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    int id;
+    string name;
+
+public:
+    void details(int id, string name) {
+        this->id = id;
+        this->name = name;
+    }
+
+    void display() {
+        cout << "Student ID:" << id << endl;
+        cout << "Student Name:" << name << endl;
+    }
+};
+
+int main() {
+    Student s1;
+    s1.details(102, "Sneha");
+    s1.display();
+    return 0;
+}
