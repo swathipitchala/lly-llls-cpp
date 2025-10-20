@@ -1,0 +1,19 @@
+#include <iostream> 
+using namespace std; 
+class MyClass { 
+public: 
+   
+    MyClass() { 
+    cout << "Constructor: Object is created." << endl; 
+    } 
+    
+    ~MyClass() { 
+     cout << "Destructor: Object is destroyed." << endl; 
+    } 
+}; 
+int main()  
+{ 
+    MyClass obj; 
+    cout << "Inside main function." << endl; 
+    return 0; 
+}
