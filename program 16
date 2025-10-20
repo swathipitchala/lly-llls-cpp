@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+class Person {
+public:
+    Person() {
+        cout << "Constructor: Person object created." << endl;
+    }
+    ~Person() {
+        cout << "Destructor: Person object destroyed." << endl;
+    }
+};
+class Student : public Person {
+public:
+    Student() {
+        cout << "Constructor: Student object created." << endl;
+    }
+    ~Student() {
+        cout << "Destructor: Student object destroyed." << endl;
+    }
+};
+int main() {
+    cout << "Creating a Student object..." << endl;
+    Student s;
+    cout << "Student object is now in use." << endl;
+    cout << "Exiting the program..." << endl;
+    return 0;
+}
+
